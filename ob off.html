@@ -1,0 +1,25 @@
+<html lang="en">
+<body>
+    <center>
+        <h1 id="h1txt">Bulb off</h1><br><br>
+        <img src="pic_bulboff.png" id="bulbPic"><br><br>
+        <input type="button" value="Off" id="btn" onclick="bulbOff()">  
+    </center>
+</body>
+<script>
+    'use strict'
+    function bulbOff(){
+        if(btn.value=="Off")
+        {
+            h1txt.innerHTML="Bulb On"
+            bulbPic.src="pic_bulbon.png"
+            btn.value="On"
+        }
+        else{
+            h1txt.innerHTML="Bulb OFF"
+            bulbPic.src="pic_bulboff.png"
+            btn.value="Off"
+        }
+    }
+</script>
+</html>
